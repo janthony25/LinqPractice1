@@ -64,7 +64,7 @@ namespace TCPData
             
         }
 
-        public static GetDepartments()
+        public static List<Department> GetDepartments()
         {
             List<Department> departments = new List<Department>();
 
@@ -74,6 +74,7 @@ namespace TCPData
                 ShortName = "HR",
                 LongName = "Human Resources"
             };
+            departments.Add(department);
 
             department = new Department
             {
@@ -81,6 +82,7 @@ namespace TCPData
                 ShortName = "FN",
                 LongName = "Finance"
             };
+            departments.Add(department);
 
             department = new Department
             {
@@ -88,6 +90,9 @@ namespace TCPData
                 ShortName = "TE",
                 LongName = "Technology"
             };
+            departments.Add(department);
+
+            return departments;
         }
     }
 }
